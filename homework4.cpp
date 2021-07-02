@@ -1,8 +1,8 @@
 ﻿#include <iostream>
 using namespace std;
 
-void ex1(){
-    int a,b;
+void ex1() {
+    int a, b;
     cout << "Write two numbers:";
     cin >> a >> b;
     if (a + b >= 10 && a + b <= 20) {
@@ -12,10 +12,10 @@ void ex1(){
         cout << "It's False" << endl;
     }
 }
-void ex2(){
+void ex2() {
     const int a = 8;
     const int b = 2;
-    if ((a == 10 && b == 10) || (a+b == 10)) {
+    if ((a == 10 && b == 10) || (a + b == 10)) {
         cout << "It's True" << endl;
     }
     else {
@@ -23,8 +23,8 @@ void ex2(){
     }
 }
 void ex3() {
-    for (int i=1; i < 50; i++) {
-        if (i%2 != 0) {
+    for (int i = 1; i < 50; i++) {
+        if (i % 2 != 0) {
             cout << i << " ";
         }
     }
@@ -40,10 +40,10 @@ void ex4() {
     }
     for (int i = 2; i < number; i++)
     {
-         if (number % i == 0) {
+        if (number % i == 0) {
             simple = false;
             break;
-         }
+        }
 
     }
     if (simple == false) {
@@ -64,10 +64,7 @@ void ex5() {
     if (year < 100 && year % 4 == 0) {
         cout << "It's a leap year" << endl;
     }
-    else if ((year > 100 && year < 399) && (year % 100 != 0 && year % 4 == 0)) {
-        cout << "It's a leap year" << endl;
-    }
-    else if ((year > 399) && (year % 400 == 0 || year % 4 == 0)) {
+    else if ((year > 100) && ((year % 400 == 0) || (year % 100 != 0 && year % 4 == 0))) {
         cout << "It's a leap year" << endl;
     }
     else {
@@ -77,10 +74,10 @@ void ex5() {
 int main()
 {
     ex1();
-   // ex2();
-   // ex3();
-   // ex4();
-   // ex5();
+    // ex2();
+    // ex3();
+    // ex4();
+    // ex5();
 
 
     system("pause");
